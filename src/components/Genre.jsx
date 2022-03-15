@@ -41,10 +41,10 @@ const Genre = ({ name }) => {
       genreColor = '#BCB88A' // sage
       break
     case 'History':
-      genreColor = '#D2B4C8' // tan
+      genreColor = '#d2b48c' // tan
       break
     case 'Romance':
-      genreColor = '#FFCCCB' // light red
+      genreColor = '#FF817E' // light red
       break
     case 'War':
       genreColor = '#4b5320' // army green
