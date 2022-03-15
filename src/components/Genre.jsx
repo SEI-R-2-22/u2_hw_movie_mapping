@@ -29,7 +29,7 @@ const Genre = ({ name }) => {
       genreColor = '#FFFFE0' // light yellow
       break
     case 'Drama':
-      genreColor = '#7F0FF' // violet
+      genreColor = '#7f00ff' // violet
       break
     case 'Family':
       genreColor = '#008080' // teal
@@ -48,6 +48,9 @@ const Genre = ({ name }) => {
       break
     case 'War':
       genreColor = '#4b5320' // army green
+      break
+    case 'Western':
+      genreColor = 'lightgoldenrodyellow'
       break
     case 'Documentary':
       genreColor = '#666B6C' // medium gray
