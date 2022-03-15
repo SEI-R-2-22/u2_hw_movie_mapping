@@ -16,9 +16,11 @@ const App = () => {
             overview={movie.overview}
             posterPath={movie.poster_path}
           />
-          {movie.genres.map((genre) => (
-            <Genre key={genre.id} name={genre.name} />
-          ))}
+          <div className="genres-container">
+            {movie.genres.map((genre) => (
+              <Genre key={genre.id} name={genre.name} />
+            ))}
+          </div>
         </div>
       ))}
     </div>
