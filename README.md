@@ -70,6 +70,27 @@ Just an Example:
     </div>
   )
 ```
+Adventure
+Animation 
+Comedy
+Crime
+Documentary
+Drama
+Family
+Fantasy
+History
+Horror
+Music
+Mystery
+Romance
+"Science Fiction"
+Thriller
+"TV Movie"
+War
+Western
+
+
+
 
 - Add a specific background color for each genre associated with the movies in `movies.json`
 
