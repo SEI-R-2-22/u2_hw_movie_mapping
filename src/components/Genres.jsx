@@ -40,7 +40,7 @@ const Genres = (props) => {
   return (
     <div className={props.name}>
       <p style={{backgroundColor: myColorVariable, color: "rgb(255,255,255)"}}>{props.genre}</p>
-     {/* <p style={{background: myColorVariable, color: '#000000'}}>{props.something}</p> */}
+
     </div>
   )
 }
