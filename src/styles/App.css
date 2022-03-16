@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  border-bottom: 1px solid black;
 }
 
 .App-logo {
@@ -36,3 +37,11 @@
     transform: rotate(360deg);
   }
 }
+
+.topPart {
+
+  text-decoration: underline;
+
+}
+
+
