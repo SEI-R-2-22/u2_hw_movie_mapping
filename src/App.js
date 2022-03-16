@@ -11,15 +11,15 @@ const App = () => {
   
   return(
     
-    
-      {movieArray.title.map((mov) => (
+    for(let i=0; i<movieArray.length; i++)
+      {movieArray[i].title.map((mov) => (
       
       <div className="movie">
         <h3>Movie List</h3>
         <Movie 
-          // name={mov.title}
-          // key={mov.key}
-          // pic={mov.}
+          // name={mov[i].title}
+          // key={mov[i].key}
+          // pic={mov[i].poster_path}
         />
         {/* <Genre /> */}
         
