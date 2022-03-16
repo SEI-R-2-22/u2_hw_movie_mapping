@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+h1 {
+  background-color: #020c1b;
+  color:#64ffda;
+  margin: 0;
+  padding: 40px;
+  text-align: center;
+  border-bottom:solid 10px #64ffda;
+}
+
+.movie-list {
+  background-color: #020c1b;
+  color: white;
+}
+
+.Genre {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.information {
+  padding-bottom: 20px;
+  border-bottom:solid 10px #64ffda;
+}
