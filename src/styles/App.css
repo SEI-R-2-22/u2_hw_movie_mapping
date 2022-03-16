@@ -1,6 +1,26 @@
 .App {
-  text-align: center;
+  background-color: #0000007a;
+  color: rgb(0, 0, 0);
 }
+
+.App >h1 {
+  text-align: center;
+  width: 100%;
+  margin-top: 0px;
+  padding-top: 25px;
+  
+}
+
+.App > div { 
+  text-align: center;
+  display: grid;
+  grid-template-columns:  repeat(3, 1fr);
+ 
+}
+
+.App {
+  text-align: center;
+ }
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +55,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+li {
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+
+}
+
+li > img {
+  height: 150px;
+}
+
+#root > div > div > ul > li:nth-child(2) {
+  font-style: italic;
 }
