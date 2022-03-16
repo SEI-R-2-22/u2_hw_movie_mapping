@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  width: 100vw;
 }
 
 .App-logo {
@@ -35,4 +36,78 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.movieContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+
+.movieDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 45%;
+  margin: 10px;
+  padding: 20px 0;
+
+  background-color: white;
+  border: solid 1px rgb(193, 191, 191);
+
+  border-radius: 16px;
+}
+
+.movieDiv:hover {
+  box-shadow: 0px 0px 20px grey;
+}
+
+.movieDiv h1 {
+  font-size: 1.4em;
+  margin: 10px 0 0;
+}
+
+.movieDiv h3 {
+  font-size: 0.8em;
+}
+
+.movieDiv img {
+  height: 600px;
+}
+
+.movieDiv p {
+  font-family: serif;
+  font-size: 1em;
+  line-height: 1.3em;
+  text-align: left;
+  width: 400px;
+  margin: 20px auto;
+}
+
+.genre {
+  text-align: center;
+  width: 25%;
+  margin: 5px 10px;
+  padding: 0 auto;
+}
+
+.genreMain {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: space-evenly;
+}
+
+.genreMain p {
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  border-radius: 20px;
+  padding: 4px 0;
 }
