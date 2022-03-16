@@ -1,6 +1,6 @@
 // import React from 'react' 
 
-// export default function Genre (props) {
+// const Genre (props) {
 //     let myColorVariable;
 //     switch(props.genre) {
 //         case 'Action': 
@@ -23,8 +23,8 @@
   
 //     return (
 //       <div>
-//         // EXAMPLE of inline styling WITH a variable
-//         <p style={{backgroundColor: myColorVariable, color: '#000000'}} >{props.genre}</p>
+//         <p style={{backgroundColor: myColorVariable, color: 'white'}} >{props.genre}</p>
 //       </div>
 //     )
 // }
+// export default Genre; 

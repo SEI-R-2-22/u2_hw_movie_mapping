@@ -7,17 +7,19 @@ import Movie from './components/Movie'
 
 const App = () => {
 
-  // console.log(movieArray.value)
-  const array = [movieArray]
-  return(
   
-    {movieArray.map((name, key, pic) => (
+  
+  return(
+    
+    
+      {movieArray.title.map((mov) => (
+      
       <div className="movie">
         <h3>Movie List</h3>
         <Movie 
-          name={name}
-          key={key}
-          pic={pic}
+          // name={mov.title}
+          // key={mov.key}
+          // pic={mov.}
         />
         {/* <Genre /> */}
         
