@@ -1,5 +1,8 @@
 .App {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
+  width: 500px;
 }
 
 .App-logo {
@@ -35,4 +38,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+img {
+  width: 400px;
+  height: 400px;
+}
+
+.Movies {
+  background-color: gray;
+  border: 1px solid black;
 }
