@@ -1,38 +1,104 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 10vh;
+  display: grid;
+  grid-column: 1 / span 6;
+  font-size: 1em;
+  color: whitesmoke;
+}
+
+/* direction for overlay feature taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade */
+/* direction for image blur taken from https://www.codeblocq.com/2016/05/Blur-Image-on-Hover-with-CSS/ */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .2s;
+  background-color: rgba(40,44,52, 0.60);
+  backdrop-filter: blur(15px);
+  color: whitesmoke;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+.movie-profile {
+  position: relative;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.movie-image {
+  display: block;
+  width: 100%;
+  height: auto;
+
+}
+
+.movie-profile:hover .overlay {
+  opacity: 1;
+}
+
+.movie-profile:hover .movie-image {
+  filter: blur(5px);
+}
+
+
+.movie-title {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.release-date {
+  padding: 0px 10px 0px 10px;
+  margin-top: -20px;
+}
+
+.overview {
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+
+.genre-name {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  vertical-align: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 25px;
+  opacity: 0.8;
+}
+
+@media screen and ((min-width: 600px) and (max-width: 1200px) ){
+  .App {
+    grid-template-columns: 1fr 1fr 1fr;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App-header {
+    grid-column: 1 / span 3;
   }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .App {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .App-header {
+    grid-column: 1 / span 2;
+  }
+  
 }
