@@ -7,7 +7,7 @@ function Genres(props) {
             myColor = "#dd3c3c"
             break
         case 'Adventure':
-            myColor = "dd7c3c"
+            myColor = "#dd7c3c"
             break
         case 'Animation':
             myColor = "#ddbc3c"
@@ -49,7 +49,7 @@ function Genres(props) {
             myColor = "#dd3c77"
             break
         case 'Thriller':
-            myColor = "#dd3c3f"
+            myColor = "#d4a0a0"
             break
         case 'TV Movie':
             myColor = "#dd7a3c"
@@ -66,7 +66,7 @@ function Genres(props) {
     
     return (
         <div>
-            <p style={{backgroundColor: myColor, color:'#000000'}}>{props.genre}</p>
+            <p className="genre-p" style={{backgroundColor: myColor, color:'#000000'}}>{props.genre}</p>
         </div>
     );
 }

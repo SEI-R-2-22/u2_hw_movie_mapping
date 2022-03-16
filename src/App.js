@@ -8,8 +8,11 @@ import Movie from './components/Movie';
 const App = () => {
   return (
     <div className="App">
-      <h1>Movie List</h1>
-      {movieArray.map((movie) => (
+      <div className="title">
+        <h1>Movie List</h1>
+      </div>
+      <div className="movies">
+        {movieArray.map((movie) => (
           <Movie key={movie.id} 
           poster={movie.poster_path} 
           title={movie.original_title} 
@@ -17,7 +20,8 @@ const App = () => {
           overview={movie.overview} 
           genre={movie.genres}
           />
-      ))}
+        ))}
+      </div>
     </div>
   )
 };
