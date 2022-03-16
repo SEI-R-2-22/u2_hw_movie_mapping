@@ -1,18 +1,45 @@
-let myColorVariable;
-switch(props.genre) {
-  case 'some genre': 
-    myColorVariable = someColor.associated.with.a.specific.genre
+import React from 'react'
+
+export default function Genre(props) {
+    let myColorVariable;
+switch(props.movieGenre.name) {
+  case 'Action': 
+    myColorVariable = "blue"
+    break
+    case 'Science Fiction':
+    myColorVariable = "green"
+    break
+    case 'Drama':
+    myColorVariable = "red"
+    break
+    case 'Family':
+    myColorVariable = "yellow"
+    break
+    case 'Comedy':
+    myColorVariable = "orange"
+    break
+    case 'Horror':
+    myColorVariable = "purple"
+    break
+    case 'Adventure':
+    myColorVariable = "brown"
+    break
+    case 'Fantasy':
+    myColorVariable = "grey"
+    break
+    case 'Animation':
+    myColorVariable = "black"
+    break
+    case 'Crime':
+        myColorVariable = "silver"
     break
   default:
-    myColorVariable = 'some cool color'
+    myColorVariable = 'pink'
+
 }
-
-return (
-  <div>
-    // EXAMPLE of inline styling without a variable
-    <p style={{ backgroundColor: 'darkslateblue', color: 'rgb(255,255,255)' }} >{props.genre}</p>
-
-    // EXAMPLE of inline styling WITH a variable
-    <p style={{backgroundColor: myColorVariable, color: '#000000'}} >{props.something}</p>
-  </div>
-)
+  return (
+    <div>
+         <p style={{ backgroundColor: myColorVariable, color: 'rgb(255,255,255)' }} >{props.movieGenre.name}</p>
+    </div>
+  )
+}
