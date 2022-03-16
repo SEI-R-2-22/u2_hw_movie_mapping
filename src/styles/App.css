@@ -36,3 +36,54 @@
     transform: rotate(360deg);
   }
 }
+
+h1 {
+  font-family: 'Bubblegum Sans';
+  color: white;
+  background-color: black;
+}
+
+body {
+  background-color: slategray;
+}
+
+img {
+  max-height: 25vh;
+  border: 2px solid black;
+}
+
+.movieBox {
+  min-width: 30vh;
+  max-width: 30vh;
+  min-height: 40vh;
+  background-color: white;
+  border: 5px solid black;
+  margin: 5px;
+  padding: 20px 5px 20px 5px;
+  align-items: center;
+  text-align: center;
+}
+
+.genreBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.genreIndiv {
+}
+
+.allMovies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+}
+
+p {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 15px;
+}
