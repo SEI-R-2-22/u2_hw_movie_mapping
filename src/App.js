@@ -5,24 +5,24 @@ import Movie from './components/Movie'
 // import Genre from './components/Genre'
 
 
-export default function App = () => {
+const App = () => {
 
-  console.log(movieArray.value)
-  
+  // console.log(movieArray.value)
+  const array = [movieArray]
   return(
   
-    // movieArray.forEach((movie) => {
-    //   <div className="movie">
-    //     <h3>Movie List</h3>
-    //     <Movie 
-    //       name={movie.original_title}
-    //       key={movie.id}
-    //       pic={movie.poster_path}
-    //     />
-    //     {/* <Genre /> */}
+    {movieArray.map((name, key, pic) => (
+      <div className="movie">
+        <h3>Movie List</h3>
+        <Movie 
+          name={name}
+          key={key}
+          pic={pic}
+        />
+        {/* <Genre /> */}
         
-    //   </div>
-    // })
+      </div>
+    ))}
   )
 }
 

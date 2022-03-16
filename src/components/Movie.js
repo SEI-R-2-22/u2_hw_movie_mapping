@@ -4,8 +4,7 @@ export default function Movie (props){
 
     return(
         <li>
-            <h3>{`${props.name}`}</h3>
-            <img src={`${props.pic}`} alt={props.id} />
+            <img src={`${props.poster_path}`} alt={props.id} />
         </li>
     )
 }
