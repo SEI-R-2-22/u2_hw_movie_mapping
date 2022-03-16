@@ -3,7 +3,9 @@ import React from 'react'
 export default function Genre (props) {
 
     const colorSw = (props) =>{
-
+        if(props.genre == 'Action'){
+            
+        }
     }
     // switch(props.genre) {
     //     case 'Action': 
