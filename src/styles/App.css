@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: white;
+  color: white;
 }
 
 .App-logo {
@@ -35,4 +37,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.individualMovie {
+  border: 5px solid lightgray;
+  background-color: cornflowerblue;
+  height: auto;
+  width: 500px;
+  margin: 20px auto;
+  border-radius: 10px;
+  
+}
+
+p {
+  display: inline;
+}
+
+img {
+  height: 300px;
+}
+
+h1 {
+  color: cornflowerblue;
 }
