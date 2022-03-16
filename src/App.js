@@ -1,5 +1,6 @@
 import './styles/App.css'
 import React from 'react'
+import movieArray from './data/movies.json'
 
 const App = () => {
   return (
