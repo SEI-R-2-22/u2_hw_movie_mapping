@@ -3,8 +3,9 @@ import React from 'react'
 export default function Movie (props){
 
     return(
-        <div className='pic'>
-            <img src={`${props.pic}`} alt=""/>
-        </div>
+        <li>
+            <h3>{`${props.name}`}</h3>
+            <img src={`${props.pic}`} alt={props.id} />
+        </li>
     )
 }

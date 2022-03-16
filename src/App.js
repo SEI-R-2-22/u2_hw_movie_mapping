@@ -2,19 +2,27 @@ import './styles/App.css'
 import React from 'react'
 import movieArray from './data/movies.json'
 import Movie from './components/Movie'
+// import Genre from './components/Genre'
 
 
-const App = () => {
-  const pic = movieArray.backdrop_path
-  // console.log(movieArray)
+export default function App = () => {
+
+  console.log(movieArray.value)
+  
   return(
-    
-      <div className="movie">
-        <Movie 
-          key={movieArray.id}
-          pic={pic}
-        />
-      </div>
+  
+    // movieArray.forEach((movie) => {
+    //   <div className="movie">
+    //     <h3>Movie List</h3>
+    //     <Movie 
+    //       name={movie.original_title}
+    //       key={movie.id}
+    //       pic={movie.poster_path}
+    //     />
+    //     {/* <Genre /> */}
+        
+    //   </div>
+    // })
   )
 }
 
