@@ -2,6 +2,37 @@
   text-align: center;
 }
 
+img {
+  height: 300px;
+}
+
+.boxes {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 400px 400px 400px;
+}
+
+.movie-wrapper {
+  display: block;
+  border: 1px solid black;
+  width: 350px;
+  margin: 10px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.poster-genres {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  justify-content: center;
+}
+
+.genre-styling {
+  padding: 0 10px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
