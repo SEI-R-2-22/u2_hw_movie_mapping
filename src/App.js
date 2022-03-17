@@ -1,16 +1,22 @@
 import './styles/App.css'
 import React from 'react'
 import movieArray from './data/movies.json'
-import IndividualMovie from './components/IndividualMovie';
-import MovieGenres from './components/MovieGenres';
+import Movie from './components/Movie';
+import Genre from './components/Genre';
 const App = () => {
   return (
     <div className="App">
       <h1>Movie List</h1>
-      {movieArray.map((movie, index) => (
-        <IndividualMovie movie = {movie} key={movie.id}/>
-      ))}
+      { movieArray.map((movie) => (
+        <div>
+          <Movie film={movie} key={movie.id}/>
+      
+        {movie.genres.map((genre) => (
+         <Genre genre={genre} />
+       ))}
       </div>
+      ))}
+    </div>
   )
 };
 
