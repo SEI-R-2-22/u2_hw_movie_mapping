@@ -1,34 +1,34 @@
-import React from "react"
+import React from 'react'
 
-const Genre = (props) => {
+export default function Genre(props) {
     let myColorVariable;
-    switch (props.genre) {
-        case 'action':
-            myColorVariable = 'orange'.genre
+    switch (props.genre.name) {
+        case 'Action':
+            myColorVariable = 'maroon'
             break
-        case 'romance':
-            myColorVariable = 'purple'.genre
+        case 'Romance':
+            myColorVariable = 'purple'
             break
-        case 'fantasy':
-            myColorVariable = 'green'.genre
+        case 'Fantasy':
+            myColorVariable = 'green'
             break
-        case 'thriller':
-            myColorVariable = 'magenta'.genre
+        case 'Adventure':
+            myColorVariable = 'lime'
             break
-        case 'science fiction':
-            myColorVariable = 'turquoise'.genre
+        case 'Thriller':
+            myColorVariable = 'magenta'
+            break
+        case 'Comedy':
+            myColorVariable = 'yellow'
+            break
+        case 'Science Fiction':
+            myColorVariable = 'turquoise'
             break
         default:
             myColorVariable = 'violet'
 
     }
     return (
-        <div>
-            <p style={{ backgroundColor: myColorVariable, color: 'blue' }}>
-                {props.children}
-            </p>
-        </div>
+        <div style={{ backgroundColor: myColorVariable, color: '#000000' }} >{props.genre.name}</div>
     )
-};
-
-export default Genre;
+}
