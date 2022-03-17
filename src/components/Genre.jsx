@@ -29,9 +29,10 @@ const Genre = (props) => {
             
     }
     return (
-        <div>
-            <p style={{ backgroundColor: myColorVariable}} >{props.genre.name} </p>
+        <div className='Genre'>
+            <p style={{ color: myColorVariable }} >{props.genre.name} </p>
+           
         </div>
     )
-}
+};
 export default Genre;
