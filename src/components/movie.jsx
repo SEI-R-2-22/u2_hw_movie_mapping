@@ -1,5 +1,5 @@
 import React from 'react'
-import Genre from './Genre'
+
 
 const Movie = (props) => {
    return (
@@ -9,10 +9,6 @@ const Movie = (props) => {
         <img src={props.movie.poster_path}/>
         <p>{props.movie.overview}</p> 
 
-
-        {props.movie.genres.map((genre, index) => (
-        < Genre movieGenre={genre} index={index}/>
-        ))}
      </div>
    )
  }

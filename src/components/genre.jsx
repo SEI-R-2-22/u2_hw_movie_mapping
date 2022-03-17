@@ -43,3 +43,4 @@ switch(props.movieGenre.name) {
     </div>
   )
 }
+
