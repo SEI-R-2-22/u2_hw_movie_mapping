@@ -13,10 +13,10 @@ const App = () => {   // component definition
       <h1>Movie List</h1>
       {movieArray.map((info) => (
         <div>
-        <Movie info={info} key={info.id}/>
+        <Movie film={info} key={info.id}/>
 
         {info.genres.map((genre) => (
-          <Genre genre={genre} key={genre.name}/>
+          <Genre genre={genre} key={genre.id}/>
 
         ))}
         </div>
