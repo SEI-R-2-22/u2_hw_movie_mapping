@@ -8,9 +8,14 @@ const App = () => {
   return (
     <div className="App">
       <h1>Movie List</h1>
-      {movieArray.map((movie) => ( 
-        <Movie info={movie} key={movie.id} />
-        <Genre />
+      {movieArray.map((movie) => (
+        <div>
+          <Movie info={movie} key={movie.id} />
+          
+          {movie.genres.map((genre) => (
+            <Genre genre={genre} />
+          ))}
+        </div>
       ))}
     </div>
   )
