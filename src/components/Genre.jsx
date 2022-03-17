@@ -1,4 +1,4 @@
-const Genre = (props) => {
+function Genre(props) {
     let myColorVariable;
     switch(props.genre.name) {
     case 'Crime': 
