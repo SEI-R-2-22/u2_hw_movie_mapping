@@ -10,15 +10,13 @@ const App = () => {
       <h1>Movie List</h1>
       {movies.map((movie, index) => {
         return (
-          <div>
+          <div key={index}>
             <Movie
-              // movies={movie}
-              // key={index}
-              key={movie.id}
               image={movie.poster_path}
               title={movie.original_title}
               date={movie.release_date}
               overview={movie.overview}
+              genres={movie.genres}
             />
           </div>
         )

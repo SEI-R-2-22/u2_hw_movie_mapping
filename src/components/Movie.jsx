@@ -1,5 +1,5 @@
 import React from 'react'
-// import MovieGenre from './MovieGenre'
+import MovieGenre from './MovieGenre'
 
 const Movie = (props) => {
   return (
@@ -8,11 +8,11 @@ const Movie = (props) => {
     <h2>Title: {props.title}</h2>
     <h3>Release Date: {props.date}</h3>
     <h4>Overview: {props.overview}</h4>
-    {/* {props.movie.genres.map((genre) => {
+    {props.genres.map((genre, index) => {
       return (
-        <MovieGenre genre={genre} />
+        <MovieGenre genre={genre} key={index} />
       )
-    })} */}
+    })}
   </div>
   )
   }

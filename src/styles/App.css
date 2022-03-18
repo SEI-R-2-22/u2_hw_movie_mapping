@@ -37,6 +37,13 @@
   }
 }
 
-img {
-  background-color: red;
+body {
+  display: flex;
+  float: inline-start;
+  background-color: rgb(44, 40, 40);
+  color: aliceblue;
+}
+
+p {
+  border-radius: 50%;
 }
