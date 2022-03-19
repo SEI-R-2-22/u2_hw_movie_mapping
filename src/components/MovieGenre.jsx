@@ -1,65 +1,45 @@
-let actionGenreColor
+let genreColor
 const Genre = (props) => {
 
 
   switch (props.genre.name) {
-    case 'Action' : actionGenreColor = 'red'
+    case 'Action' : genreColor = 'red'
     break
-    case 'Adventure' : actionGenreColor = 'pink'
+    case 'Adventure' : genreColor = 'pink'
     break
-    case 'Fantasy' : actionGenreColor = 'blue'
+    case 'Fantasy' : genreColor = 'blue'
     break
-    case 'Crime' : actionGenreColor = 'black'
+    case 'Crime' : genreColor = 'black'
     break
-    case 'Thriller' : actionGenreColor = 'yellow'
+    case 'Thriller' : genreColor = 'yellow'
     break
-    case 'Science Fiction' : actionGenreColor = 'purple'
+    case 'Science Fiction' : genreColor = 'purple'
     break
-    case 'Horror' : actionGenreColor = 'green'
+    case 'Horror' : genreColor = 'green'
     break
-    case 'Animation' : actionGenreColor = 'teal'
+    case 'Animation' : genreColor = 'teal'
     break
-    case 'Comedy' : actionGenreColor = 'brown'
+    case 'Comedy' : genreColor = 'brown'
     break
-    case 'Family' : actionGenreColor = 'peach'
+    case 'Family' : genreColor = 'peach'
     break
-    case 'Romance' : actionGenreColor = 'coral'
+    case 'Romance' : genreColor = 'coral'
     break
-    case 'Musical' : actionGenreColor = 'citrine'
+    case 'Musical' : genreColor = 'citrine'
     break
-    case 'History' : actionGenreColor = 'Apricot'
+    case 'History' : genreColor = 'Apricot'
     break
-    case 'Mystery' : actionGenreColor = 'grey'
+    case 'Mystery' : genreColor = 'grey'
     break
-    default: actionGenreColor = 'Amber'
+    default: genreColor = 'Amber'
     break
   }
 
 console.log(props.genre.name)
-//   let actionGenreColor;
-//   switch(props.genres.name) {
-//     case 'Action': actionGenreColor = 'red'
-//     break
-//     default: actionGenreColor = 'black'
-//   }
-
-//     let adventureGenreColor;
-//     switch(props.genres.name) {
-//       case 'Adventure': adventureGenreColor = 'green'
-//       break
-//       default: adventureGenreColor = 'yellow'
-//   }
-
-//   let fantasyGenreColor;
-//   switch(props.genres.name) {
-//     case 'Fantasy': fantasyGenreColor = 'orange'
-//     break
-//     default: fantasyGenreColor = 'blue'
-// }
 
   return (
     <div>
-      <p style={{backgroundColor: actionGenreColor}} >{props.genre.name}</p>
+      <p style={{backgroundColor: genreColor}} >{props.genre.name}</p>
     </div>
   )
 }

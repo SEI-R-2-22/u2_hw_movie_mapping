@@ -1,6 +1,5 @@
 import Movie from './components/Movie'
-import MovieGenre from './components/MovieGenre'
-import movies from './data/movies.json'
+import movies from './data/movies'
 import './styles/App.css'
 import React from 'react'
 
