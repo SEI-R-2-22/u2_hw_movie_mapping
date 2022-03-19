@@ -38,9 +38,9 @@ function Genre(props) {
   }
 
   return (
-    <div>
-      Genre
-      <p style={{color: genreColor}}> {props.name} </p>
+    <div key={props.id}>
+      <h3>Genre</h3>
+      <div style={{backgroundColor: genreColor}}>{props.genres}</div>
     </div>
 
   )
