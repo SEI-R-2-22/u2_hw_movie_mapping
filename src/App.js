@@ -18,7 +18,11 @@ const App = () => {
               release_date={movie.release_date}
               overview={movie.overview}
               {...movie.genres.map((genres, index) => (
-                <Genre name={genres.name} id={genres.id} />
+                <Genre
+                  name={genres.name}
+                  id={genres.id}
+                  action={genres.action}
+                />
               ))}
             />
           </div>

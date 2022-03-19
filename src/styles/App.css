@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  display: inline-block;
 }
 
 .movie-cards img {
@@ -7,43 +8,22 @@
 }
 
 .movie-list {
-  padding: 4px 0;
-  display: grid;
-  grid-column-gap: 5px;
+  display: inline-block;
 }
 
 .movie-cards {
-  max-width: 250px;
-  max-height: 350px;
+  width: 250px;
+  height: 450px;
   border-radius: 4px;
   background-color: #ebd05a;
-  cursor: pointer;
-  /* transition: all 0.2s; */
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  margin: 8px;
+  transition: all 0.2s;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
