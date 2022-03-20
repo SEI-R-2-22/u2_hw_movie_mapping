@@ -1,6 +1,5 @@
 import React from 'react'
 
-// function Genre(props) {
 const Genre = (props) => {
 let myColorVariable;
 switch(props.genre) {
@@ -68,9 +67,6 @@ switch(props.genre) {
 console.log(props.genre)
 return (
   <div>
-    {/* <p style={{ backgroundColor: 'darkslateblue', color: 'white' }} >{ props.genre }</p> */}
-
-    {/* // EXAMPLE of inline styling WITH a variable */}
     <p style={{backgroundColor: myColorVariable, color: 'white'}} >{ props.genre }</p>
   </div>
 )
