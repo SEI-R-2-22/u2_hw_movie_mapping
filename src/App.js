@@ -6,20 +6,28 @@ import Genre from "./components/Genre.jsx"
 
 console.log(movieArray)
 
-//  App = () => {
-function App() {
+const App = () => {
   return (
     <div className="App">
       <h1>Movie List</h1>
-      { movieArray.map((movieArray) => (
-        <><Movie
-          key={movieArray.title}
-          movie={movieArray} />
-          <Genre
-            key={movieArray.id} 
-            genre={movieArray.genres.name}
-            /></>
+      { movieArray.map((movie) => (
+        <div>
+          <Movie
+          key={movie.title}
+          movie={movie} 
+          />
+
+          {movie.genres.map((genre) => (
+          <div>
+          <Genre 
+            key={genre.id}
+             genre={genre.name}
+            />
+          </div>
+          ))}
+        </div>
       ))}
+
     </div>
   );
 };
