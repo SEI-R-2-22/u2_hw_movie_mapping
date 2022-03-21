@@ -1,5 +1,4 @@
 const Genre = (props) =>{
-    props.info.genres.map()
 
     let myColorVariable
 

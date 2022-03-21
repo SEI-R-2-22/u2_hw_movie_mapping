@@ -12,8 +12,9 @@ const App = () => {
       {movieArray.map((movie) => (
         <div>
           <Movie info={movie} key={movie.id} />
+          
           {movie.info.genres.map((genre) => (
-            <Genre info={genre}  />
+            <Genre genre={genre}/>
           ))}
         </div>
       ))}
