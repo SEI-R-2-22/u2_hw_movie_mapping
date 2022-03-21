@@ -1,12 +1,14 @@
-import './styles/App.css'
 import React from 'react'
+import './styles/App.css'
+import movieArray from './data/movies.json'
+import Movie from './components/Movie'
 
-const App = () => {
+export default function App() {
   return (
-    <div className="App">
-      <h1>Movie List</h1>
+    <div>
+      {movieArray.map((movie, index) => (
+        <Movie movie={movie} />
+      ))}
     </div>
   )
-};
-
-export default App;
+}
