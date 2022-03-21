@@ -4,6 +4,7 @@ import movieArray from './data/movies.json'
 import Movie from './components/Movie'
 import Genre from './components/Genre'
 
+
 const App = () => {
   return (
     <div className="App">
@@ -11,14 +12,14 @@ const App = () => {
       {movieArray.map((movie) => (
         <div>
           <Movie info={movie} key={movie.id} />
-          
-          {movie.genres.map((genre) => (
-            <Genre genre={genre} />
+          {movie.info.genres.map((genre) => (
+            <Genre info={genre}  />
           ))}
         </div>
       ))}
     </div>
   )
+
 };
 
 export default App;
